@@ -99,9 +99,9 @@ func (l *Lexer) readChar() {
 		l.ch = 0
 	} else {
 		l.ch = l.input[l.readPosition]
-		l.position = l.readPosition
-		l.readPosition++
 	}
+	l.position = l.readPosition
+	l.readPosition++
 }
 
 // peekChar looks at next character without advancing the pointer
